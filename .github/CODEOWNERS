@@ -1,0 +1,23 @@
+# Quien aprueba los cambios de este repositorio.
+#
+# Un pull request hacia la rama por defecto no se fusiona hasta que lo apruebe
+# alguien del equipo listado abajo. Basta uno; no se necesitan todos.
+#
+# Las aprobaciones de quien no este listado se siguen viendo y sirven para
+# revisar, pero no desbloquean la fusion.
+#
+# El equipo se administra en la organizacion, no en este archivo:
+#   https://github.com/orgs/Cuanticore/teams/aprobadores-mintrace
+# Cambiar quien aprueba es un cambio de membresia, no un pull request en cada
+# repositorio. Esa es la razon de usar un equipo y no handles sueltos.
+#
+# Tarea: TRAZABILID-57
+
+*                    @Cuanticore/aprobadores-mintrace
+
+# Este archivo decide quien aprueba, asi que el archivo tambien necesita dueno:
+# sin esta linea, cualquiera con permiso de escritura podria reescribir la
+# lista de aprobadores. Hoy coincide con la regla de arriba y es redundante.
+# Deja de serlo el dia que se agregue al lider tecnico del proyecto, que debe
+# poder aprobar codigo pero no cambiar quien lo aprueba.
+/.github/CODEOWNERS  @Cuanticore/aprobadores-mintrace
